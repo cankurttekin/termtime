@@ -70,8 +70,8 @@ func main() {
 	if stats.HasTimestamps {
 		output.PrintHourlyChart(stats.HourCounts)
 		output.PrintDayOfWeekChart(stats.DayCounts)
-		//fmt.Printf("\n")
-		//output.PrintTimeSpan(stats.TimeSpan)
+		fmt.Printf("\n")
+		output.PrintTimeSpan(stats.TimeSpan)
 	} else {
 		output.PrintNoTimestamps()
 	}
